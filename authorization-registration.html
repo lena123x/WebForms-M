@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WebForms</title>
+
+	<!-- Bootstrap reboot (для сброса стилей) -->
+	<link rel="stylesheet" href="libs/bootstrap-reboot.min.css">
+
+	<!-- Bootstrap сетка -->
+	<link rel="stylesheet" href="libs/bootstrap-grid.min.css">
+
+	<!-- Шрифты с Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Иконки -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+	<!-- Стили сайта -->
+	<link rel="stylesheet" href="css/login.css">
+    <link rel="icon" href="img/notepad-solid-24 (1).png" type="image/x-icon">
+</head>    
+<body>
+    <div class="wrapper">
+        <div class="form-wrapper sign-in">
+            <form action="">
+                <h1>Вход</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Логин" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Пароль" required>
+                    <i class='bx bxs-lock-alt' ></i>
+                </div>
+
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox"><span class="input-check"></span> Запомнить меня
+                    </label>
+                    <a href="#">Забыл пароль</a>
+                </div>
+
+                <button type="submit" class="btn">Войти</button>
+
+                <div class="register-link">
+                    <p>У Вас нет аккаунта? <a href="#">Регистрация</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-wrapper sign-up">
+            <form action="">
+                <h1>Регистрация</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Логин" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="email" placeholder="Почта" required>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Пароль" required>
+                    <i class='bx bxs-lock-alt' ></i>
+                </div>
+
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox"><span class="input-check"></span>Я согласен с правилами и условиями
+                    </label>
+                </div>
+
+                <button type="submit" class="btn">Зарегистрироваться</button>
+
+                <div class="input-link">
+                    <p>У Вас есть уже аккаунта? <a href="#">Войти</a></p>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="script/script-authorization-registration.js"></script>
+     
+    
+</body>
+</html>

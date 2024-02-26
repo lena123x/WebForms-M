@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WebForms</title>
+
+	<!-- Bootstrap reboot (для сброса стилей) -->
+	<link rel="stylesheet" href="libs/bootstrap-reboot.min.css">
+
+	<!-- Bootstrap сетка -->
+	<link rel="stylesheet" href="libs/bootstrap-grid.min.css">
+
+	<!-- Шрифты с Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+	<!-- Стили сайта -->
+	<link rel="stylesheet" href="css/creation-form-page.css">
+
+    <!-- Иконки -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="img/notepad-solid-24 (1).png" type="image/x-icon">
+
+
+</head>
+
+<body>
+    <!-- Шапка -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand">WebForms</a>
+
+            <ul class="navbar-menu">
+
+                <button class="btn" id="changeColorBtn" data-path="subject-form">Тема</button>
+                <button class="btn" data-path="look-form">Просмотр</button>
+                <button class="btn" data-path="cancel-form">Отменить</button>
+                <button class="btn" data-path="repeat-form">Повторить </button>
+                <button class="entrance" onclick="addForm()">Добавить форму</button>
+
+                <div class="modals">
+                    <div class="modal-overlay">
+                        <div class="modal modal--1" data-target="subject-form">
+                            Окно 1
+                        </div>
+
+                        <div class="modal modal--2" data-target="look-form">
+                            Окно 2
+                        </div>
+
+                        <div class="modal modal--3" data-target="cancel-form">
+                            Окно 3
+                        </div>
+
+                        <div class="modal modal--4" data-target="repeat-form">
+                            Окно 4
+                        </div>
+
+                    </div>
+                </div>
+                
+            </ul>
+
+            <a href="login.html" class="entrance">Выход</a>
+        </div>
+    </nav>
+
+    <div class="form-container">
+
+            <div id="formsContainer"></div>
+
+    </div>
+
+    <script src="script/script-creation-form-page.js"></script>
+    
+
+</body>
+
+</html> 
